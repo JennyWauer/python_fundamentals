@@ -68,3 +68,10 @@
 #         if x % 2 != 0:
 #             print(x)
 # print_odd()
+
+# 9
+# def iterate(list):
+#     for x in range(len(list)):
+#         print(list[x])
+# iterate([1,2,3,4,5,5,2,6])
+
