@@ -90,3 +90,11 @@
 #         list[x] = list[x] * list[x]
 #     return list
 # print(square([2,3,12,1,5,6]))
+
+# 12 
+def zero(list):
+    for x in range(len(list)):
+        if list[x] < 0:
+            list[x] = 0
+    return list
+print(zero([2,-1,-14,12]))
