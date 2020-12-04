@@ -83,3 +83,10 @@
 #     avg = sum/len(list)
 #     return avg
 # print(get_avg([1,5,12,1,3,1,12]))
+
+# 11
+# def square(list):
+#     for x in range(len(list)):
+#         list[x] = list[x] * list[x]
+#     return list
+# print(square([2,3,12,1,5,6]))
