@@ -92,9 +92,18 @@
 # print(square([2,3,12,1,5,6]))
 
 # 12 
-def zero(list):
-    for x in range(len(list)):
-        if list[x] < 0:
-            list[x] = 0
+# def zero(list):
+#     for x in range(len(list)):
+#         if list[x] < 0:
+#             list[x] = 0
+#     return list
+# print(zero([2,-1,-14,12]))
+
+# 13
+def shift(list):
+    for x in range(len(list)-1):
+        list[x] = list[x+1]
+    list[len(list)-1] = 0
     return list
-print(zero([2,-1,-14,12]))
+
+print(shift([1,2,3,1,2,2,5,6,12]))
