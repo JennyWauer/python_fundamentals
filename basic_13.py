@@ -75,3 +75,11 @@
 #         print(list[x])
 # iterate([1,2,3,4,5,5,2,6])
 
+# 10
+# def get_avg(list):
+#     sum = 0
+#     for x in range(len(list)):
+#         sum += list[x]
+#     avg = sum/len(list)
+#     return avg
+# print(get_avg([1,5,12,1,3,1,12]))
