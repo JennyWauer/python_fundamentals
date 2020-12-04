@@ -40,16 +40,24 @@
 # print(greater([1,2,31,45,2,61,17], 4))
 
 # 6
-def min_max_avg(list):
-    min = list[0]
-    max = list[0]
-    sum = 0
+# def min_max_avg(list):
+#     min = list[0]
+#     max = list[0]
+#     sum = 0
+#     for x in range(len(list)):
+#         if list[x] < min:
+#             min = list[x]
+#         if list[x] > max:
+#             max = list[x]
+#         sum += list[x]
+#     avg = sum/len(list)
+#     return min, max, avg
+# print(min_max_avg([1,3,2,12,16, -2, 13]))
+
+# 7
+def swap_neg(list):
     for x in range(len(list)):
-        if list[x] < min:
-            min = list[x]
-        if list[x] > max:
-            max = list[x]
-        sum += list[x]
-    avg = sum/len(list)
-    return min, max, avg
-print(min_max_avg([1,3,2,12,16, -2, 13]))
+        if list[x] < 0:
+            list[x] = "Dojo"
+    print(list)
+swap_neg([-1,3,-9,2,3])
