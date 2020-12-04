@@ -55,9 +55,16 @@
 # print(min_max_avg([1,3,2,12,16, -2, 13]))
 
 # 7
-def swap_neg(list):
-    for x in range(len(list)):
-        if list[x] < 0:
-            list[x] = "Dojo"
-    print(list)
-swap_neg([-1,3,-9,2,3])
+# def swap_neg(list):
+#     for x in range(len(list)):
+#         if list[x] < 0:
+#             list[x] = "Dojo"
+#     print(list)
+# swap_neg([-1,3,-9,2,3])
+
+# 8
+# def print_odd():
+#     for x in range(1,256):
+#         if x % 2 != 0:
+#             print(x)
+# print_odd()
