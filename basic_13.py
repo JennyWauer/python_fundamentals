@@ -22,10 +22,19 @@
 # find_max([1,2,3,4,5,6,7])
 
 # 4
-def odd():
-    odd_list = []
-    for x in range(1,256): 
-        if x % 2 != 0:
-            odd_list.append(x)
-    return odd_list
-print(odd())
+# def odd():
+#     odd_list = []
+#     for x in range(1,256): 
+#         if x % 2 != 0:
+#             odd_list.append(x)
+#     return odd_list
+# print(odd())
+
+# 5 
+def greater(list, y):
+    count = 0
+    for x in range(len(list)):
+        if list[x] > y:
+            count += 1
+    return count
+print(greater([1,2,31,45,2,61,17], 4))
