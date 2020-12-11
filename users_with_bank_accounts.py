@@ -2,18 +2,19 @@ class User:		# here's what we have so far
     def __init__(self, name, email):
         self.name = name
         self.email = email
-        self.account_balance = 0
+        self.account = BankAccount(int_rate = 0.02, balance = 0)
     # adding the deposit method
     def make_deposit(self, amount):
-        self.account_balance += amount
+        self.account.deposit(amount)
         return self
 
     def make_withdrawl(self, amount):
-        self.account_balance -= amount
+        self.account.withdrawl(amount)
         return self
 
     def display_user_balance(self):
-        print('User: {}, Balance: ${}'.format(self.name, self.account_balance))
+        print('User: {}'.format(self.name))
+        self.account.display_account_info()
         return self
 
     def transfer_money(self, other_user, amount):
@@ -59,10 +60,10 @@ zach.make_deposit(2000).make_deposit(1000).make_withdrawl(100).make_withdrawl(30
 
 sam.make_deposit(3000).make_withdrawl(1000).make_withdrawl(1000).make_withdrawl(150).display_user_balance()
 
-account1 = BankAccount(.05, 200)
+# account1 = BankAccount(.05, 200)
 
-account2 = BankAccount(.1, 2000)
+# account2 = BankAccount(.1, 2000)
 
-account1.deposit(1000).deposit(150).deposit(250).withdrawl(200).yield_interest().display_account_info()
+# account1.deposit(1000).deposit(150).deposit(250).withdrawl(200).yield_interest().display_account_info()
 
-account2.deposit(1000).deposit(3000).withdrawl(2000).withdrawl(20).withdrawl(1000).withdrawl(55).yield_interest().display_account_info()
+# account2.deposit(1000).deposit(3000).withdrawl(2000).withdrawl(20).withdrawl(1000).withdrawl(55).yield_interest().display_account_info()
