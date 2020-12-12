@@ -1,5 +1,5 @@
 class Store:
-    def __init__(self, name, product_list):
+    def __init__(self, name):
         self.name = name
         self.product_list = []
     
@@ -28,3 +28,5 @@ class Product:
 
     def print_info(self):
         print(self)
+
+store = Store("Ultra")
