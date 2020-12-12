@@ -29,4 +29,6 @@ class Product:
     def print_info(self):
         print(self)
 
-store = Store("Ultra")
+ultra = Store("Ultra")
+
+
