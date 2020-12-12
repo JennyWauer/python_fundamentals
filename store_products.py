@@ -8,3 +8,13 @@ class Product:
         self.name = name
         self.price = price
         self.category = category
+    
+    def update_price(self, percent_change, is_increased):
+        if is_increased == True:
+            increase = self.price * percent_change
+            self.price += increase
+            return self
+        else:
+            decrease = self.price * percent_change
+            self.price -= decrease
+            return self
