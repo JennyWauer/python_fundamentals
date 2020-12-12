@@ -38,4 +38,7 @@ shampoo = Product("shampoo", 5.55, "hair care")
 conditioner = Product("conditioner", 4.99, "hair care")
 nail_polish = Product("nail polish", 3.69, "nail care")
 
-ultra.add_product(shampoo).add_product(conditioner).add_product(conditioner).add_product(nail_polish)
+ultra.add_product(shampoo).add_product(conditioner).add_product(nail_polish).sell_product(1)
+
+shampoo.update_price(0.15, True).print_info()
+nail_polish.update_price(0.08, False).print_info()
