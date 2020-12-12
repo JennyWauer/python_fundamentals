@@ -18,3 +18,6 @@ class Product:
             decrease = self.price * percent_change
             self.price -= decrease
             return self
+
+    def print_info(self):
+        print(self)
