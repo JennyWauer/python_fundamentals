@@ -29,6 +29,9 @@ class Product:
     def print_info(self):
         print(self)
 
+# Test cases
 ultra = Store("Ultra")
 
-
+shampoo = Product("shampoo", 5.55, "hair care")
+conditioner = Product("conditioner", 4.99, "hair care")
+nail_polish = Product("nail polish", 3.69, "nail care")
