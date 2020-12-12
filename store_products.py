@@ -2,6 +2,9 @@ class Store:
     def __init__(self, name, product_list):
         self.name = name
         self.product_list = []
+    
+    def add_product(self, new_product):
+        self.product_list.append(new_product)
 
 class Product:
     def __init__(self, name, price, category):
