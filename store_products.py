@@ -5,6 +5,10 @@ class Store:
     
     def add_product(self, new_product):
         self.product_list.append(new_product)
+    
+    def sell_product(self, id):
+        print(self.product_list[id])
+        self.product_list.pop(id)
 
 class Product:
     def __init__(self, name, price, category):
